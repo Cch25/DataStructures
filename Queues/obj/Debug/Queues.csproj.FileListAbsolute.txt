@@ -1,0 +1,7 @@
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Queues\bin\Debug\Queues.exe.config
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Queues\bin\Debug\Queues.exe
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Queues\bin\Debug\Queues.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Queues\obj\Debug\Queues.csprojResolveAssemblyReference.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Queues\obj\Debug\Queues.csproj.CoreCompileInputs.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Queues\obj\Debug\Queues.exe
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Queues\obj\Debug\Queues.pdb

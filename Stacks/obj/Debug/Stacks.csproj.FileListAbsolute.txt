@@ -1,0 +1,6 @@
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\bin\Debug\Stacks.exe.config
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\bin\Debug\Stacks.exe
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\bin\Debug\Stacks.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\obj\Debug\Stacks.csproj.CoreCompileInputs.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\obj\Debug\Stacks.exe
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\obj\Debug\Stacks.pdb
