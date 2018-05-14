@@ -13,7 +13,7 @@ namespace T107.DataStructuresAndAlgorithms
             //CheckLinkedLists();
             //CheckStack();
             //CheckQueue();
-            //CheckBinarySearchTree();
+            CheckBinarySearchTree();
 
         }
 
@@ -95,7 +95,7 @@ namespace T107.DataStructuresAndAlgorithms
             Console.WriteLine($"Max value {bst.GetMaxValue()}");
             Console.WriteLine($"Min value {bst.GetMinValue()}");
 
-            bst.Delete(16);
+            bst.Delete(8);
 
             bst.Traversal();
         }

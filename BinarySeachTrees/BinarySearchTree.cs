@@ -12,7 +12,7 @@ namespace BinarySeachTrees
                 InOrderTraversal(_root);
         }
 
-        private void InOrderTraversal(Node<T> node)
+        private static void InOrderTraversal(Node<T> node)
         {
             if (node.LeftNode != null)
                 InOrderTraversal(node.LeftNode);
@@ -31,7 +31,7 @@ namespace BinarySeachTrees
             }
         }
 
-        private void InsertNode(T data, Node<T> node)
+        private static void InsertNode(T data, Node<T> node)
         {
             if (node.CompareTo(data) < 0)
             {
@@ -57,7 +57,7 @@ namespace BinarySeachTrees
                 Delete(_root, data);
         }
 
-        private Node<T> Delete(Node<T> node, T data)
+        private static Node<T> Delete(Node<T> node, T data)
         {
             if (node == null) return null;
             if (node.CompareTo(data) < 0)
@@ -99,41 +99,29 @@ namespace BinarySeachTrees
             return node;
         }
 
-        private Node<T> GetPredecessor(Node<T> nodeLeftNode)
+        private static Node<T> GetPredecessor(Node<T> nodeLeftNode)
         {
-            if (nodeLeftNode.RightNode != null)
-                return GetPredecessor(nodeLeftNode.RightNode);
-            return nodeLeftNode;
+            return nodeLeftNode.RightNode != null ? GetPredecessor(nodeLeftNode.RightNode) : nodeLeftNode;
         }
 
         public T GetMaxValue()
         {
-            if (_root == null)
-            {
-                return default(T);
-            }
-            return GetMax(_root);
+            return _root == null ? default(T) : GetMax(_root);
         }
 
-        private T GetMax(Node<T> node)
+        private static T GetMax(Node<T> node)
         {
-            if (node.RightNode != null)
-                return GetMax(node.RightNode);
-            return node.Data;
+            return node.RightNode != null ? GetMax(node.RightNode) : node.Data;
         }
 
         public T GetMinValue()
         {
-            if (_root == null)
-                return default(T);
-            return GetMinValue(_root);
+            return _root == null ? default(T) : GetMinValue(_root);
         }
 
-        private T GetMinValue(Node<T> node)
+        private static T GetMinValue(Node<T> node)
         {
-            if (node.LeftNode != null)
-                return GetMinValue(node.LeftNode);
-            return node.Data;
+            return node.LeftNode != null ? GetMinValue(node.LeftNode) : node.Data;
         }
     }
 }
