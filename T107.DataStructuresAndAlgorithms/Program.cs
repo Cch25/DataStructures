@@ -1,4 +1,5 @@
 ﻿using System;
+using BinarySeachTrees;
 using LinkedLists;
 using Queues;
 using Stacks;
@@ -11,7 +12,8 @@ namespace T107.DataStructuresAndAlgorithms
         {
             //CheckLinkedLists();
             //CheckStack();
-            CheckQueue();
+            //CheckQueue();
+            //CheckBinarySearchTree();
 
         }
 
@@ -74,6 +76,28 @@ namespace T107.DataStructuresAndAlgorithms
             Console.WriteLine(queue.Dequeue());
 
 
+        }
+        private static void CheckBinarySearchTree()
+        {
+            var bst = new BinarySearchTree<int>();
+            bst.Insert(10);
+            bst.Insert(7);
+            bst.Insert(15);
+            bst.Insert(8);
+            bst.Insert(6);
+            bst.Insert(14);
+            bst.Insert(13);
+            bst.Insert(16);
+            bst.Insert(17);
+
+            bst.Traversal();
+            Console.WriteLine();
+            Console.WriteLine($"Max value {bst.GetMaxValue()}");
+            Console.WriteLine($"Min value {bst.GetMinValue()}");
+
+            bst.Delete(16);
+
+            bst.Traversal();
         }
     }
 }

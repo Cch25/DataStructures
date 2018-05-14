@@ -1,0 +1,7 @@
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\BinarySeachTrees\bin\Debug\BinarySeachTrees.exe.config
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\BinarySeachTrees\bin\Debug\BinarySeachTrees.exe
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\BinarySeachTrees\bin\Debug\BinarySeachTrees.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\BinarySeachTrees\obj\Debug\BinarySeachTrees.csprojResolveAssemblyReference.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\BinarySeachTrees\obj\Debug\BinarySeachTrees.csproj.CoreCompileInputs.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\BinarySeachTrees\obj\Debug\BinarySeachTrees.exe
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\BinarySeachTrees\obj\Debug\BinarySeachTrees.pdb

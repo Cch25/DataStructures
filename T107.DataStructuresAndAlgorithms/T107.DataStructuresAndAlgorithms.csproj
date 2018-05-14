@@ -49,6 +49,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BinarySeachTrees\BinarySeachTrees.csproj">
+      <Project>{E62804BA-20B4-4566-B5A7-BD2A766186E8}</Project>
+      <Name>BinarySeachTrees</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LinkedLists\LinkedLists.csproj">
       <Project>{809B7F79-0129-4F56-97CB-23F00EEB1130}</Project>
       <Name>LinkedLists</Name>
