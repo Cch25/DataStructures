@@ -1,6 +1,6 @@
 ﻿namespace Queues
 {
-    public class QueueFake<T> : IQueueFake<T>
+    public class Queue<T> : IQueue<T>
     {
         private Node<T> _firstNode;
         private Node<T> _lastNode;

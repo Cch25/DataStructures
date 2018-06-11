@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Stacks
 {
-    public class StackFake<T> : IFakeStack<T>, IEnumerable<T>
+    public class Stack<T> : IStack<T>, IEnumerable<T>
     {
         private int _count;
         private Node<T> _root;

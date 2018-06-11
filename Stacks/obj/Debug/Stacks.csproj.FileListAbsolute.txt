@@ -4,10 +4,10 @@ D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\bin\
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\obj\Debug\Stacks.csproj.CoreCompileInputs.cache
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\obj\Debug\Stacks.exe
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\Stacks\obj\Debug\Stacks.pdb
-D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\bin\Debug\Stacks.exe.config
-D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\bin\Debug\Stacks.exe
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\bin\Debug\Stacks.pdb
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\obj\Debug\Stacks.csprojResolveAssemblyReference.cache
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\obj\Debug\Stacks.csproj.CoreCompileInputs.cache
-D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\obj\Debug\Stacks.exe
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\obj\Debug\Stacks.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\bin\Debug\Stacks.dll.config
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\bin\Debug\Stacks.dll
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\Stacks\obj\Debug\Stacks.dll

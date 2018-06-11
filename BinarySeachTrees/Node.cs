@@ -2,21 +2,16 @@
 
 namespace BinarySeachTrees
 {
-    public class Node<T> : IComparable<T>
+    public class Node<T>
     {
-        public T Data { get; set; }
         public Node<T> LeftNode { get; set; }
         public Node<T> RightNode { get; set; }
+        public T Data { get; set; }
 
         public Node(T data)
         {
             Data = data;
         }
-
-        public Node()
-        {
-        }
-
         public int CompareTo(T other)
         {
             if (Data is IComparable d && d.CompareTo(other) < 0)
@@ -26,6 +21,7 @@ namespace BinarySeachTrees
             return 0;
 
         }
+
 
         public override string ToString()
         {

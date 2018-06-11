@@ -1,6 +1,6 @@
 ﻿namespace LinkedLists
 {
-    public interface IFakeList<in T>
+    public interface ILinkedList<in T>
     {
         void InsertBegin(T data);
         void InsertAfter(T data);

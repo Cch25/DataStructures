@@ -1,8 +1,9 @@
-﻿using System;
-using BinarySeachTrees;
+﻿using BinarySeachTrees;
 using LinkedLists;
 using Queues;
 using Stacks;
+using System;
+
 
 namespace T107.DataStructuresAndAlgorithms
 {
@@ -10,9 +11,9 @@ namespace T107.DataStructuresAndAlgorithms
     {
         static void Main()
         {
-            //CheckLinkedLists();
-            //CheckStack();
-            //CheckQueue();
+            CheckLinkedLists();
+            CheckStack();
+            CheckQueue();
             CheckBinarySearchTree();
 
         }
@@ -20,7 +21,7 @@ namespace T107.DataStructuresAndAlgorithms
         private static void CheckLinkedLists()
         {
             //linkedList
-            var linkedList = new LinkedFakeList<int>();
+            var linkedList = new LinkedList<int>();
             linkedList.InsertBegin(5);
             linkedList.InsertBegin(15);
             linkedList.InsertAfter(50);
@@ -34,7 +35,7 @@ namespace T107.DataStructuresAndAlgorithms
         }
         private static void CheckStack()
         {
-            var stack = new StackFake<int>();
+            var stack = new Stack<int>();
             stack.Push(5);
             stack.Push(15);
             stack.Push(25);
@@ -64,7 +65,7 @@ namespace T107.DataStructuresAndAlgorithms
         }
         private static void CheckQueue()
         {
-            var queue = new QueueFake<string>();
+            var queue = new Queue<string>();
             queue.Enqueue("Anne");
             queue.Enqueue("July");
             queue.Enqueue("May");
@@ -90,14 +91,14 @@ namespace T107.DataStructuresAndAlgorithms
             bst.Insert(16);
             bst.Insert(17);
 
-            bst.Traversal();
+            bst.Traversal(TraverseType.InOrder);
             Console.WriteLine();
             Console.WriteLine($"Max value {bst.GetMaxValue()}");
             Console.WriteLine($"Min value {bst.GetMinValue()}");
 
             bst.Delete(8);
 
-            bst.Traversal();
+            bst.Traversal(TraverseType.InOrder);
         }
     }
 }

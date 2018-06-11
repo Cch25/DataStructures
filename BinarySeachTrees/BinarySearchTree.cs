@@ -4,21 +4,37 @@ namespace BinarySeachTrees
 {
     public class BinarySearchTree<T> : IBinarySearchTree<T>
     {
-        private Node<T> _root;
-
-        public void Traversal()
+        private Node<T> _root { get; set; }
+        public void Traversal(TraverseType tt)
         {
-            if (_root != null)
-                InOrderTraversal(_root);
+            if (tt == TraverseType.InOrder)
+            {
+                if (_root != null)
+                    InOrderTraversal(_root);
+            }
+            else if (tt == TraverseType.Reverse)
+            {
+                if (_root != null)
+                    ReverseTraversal(_root);
+            }
         }
 
-        private static void InOrderTraversal(Node<T> node)
+        private void InOrderTraversal(Node<T> node)
         {
             if (node.LeftNode != null)
                 InOrderTraversal(node.LeftNode);
-            Console.Write($"{node.Data} -");
+            Console.Write($"{node.Data} - ");
             if (node.RightNode != null)
                 InOrderTraversal(node.RightNode);
+        }
+
+        private void ReverseTraversal(Node<T> node)
+        {
+            if (node.RightNode != null)
+                InOrderTraversal(node.RightNode);
+            Console.Write($"{node.Data} - ");
+            if (node.LeftNode != null)
+                InOrderTraversal(node.LeftNode);
         }
 
         public void Insert(T data)
@@ -26,29 +42,34 @@ namespace BinarySeachTrees
             if (_root == null)
                 _root = new Node<T>(data);
             else
-            {
-                InsertNode(data, _root);
-            }
+                InsertNode(_root, data);
         }
 
-        private static void InsertNode(T data, Node<T> node)
+        private void InsertNode(Node<T> node, T data)
         {
             if (node.CompareTo(data) < 0)
             {
                 if (node.LeftNode != null)
-                    InsertNode(data, node.LeftNode);
+                {
+                    InsertNode(node.LeftNode, data);
+                }
                 else
+                {
                     node.LeftNode = new Node<T>(data);
+                }
+
             }
             else if (node.CompareTo(data) > 0)
             {
                 if (node.RightNode != null)
-                    InsertNode(data, node.RightNode);
+                {
+                    InsertNode(node.RightNode, data);
+                }
                 else
+                {
                     node.RightNode = new Node<T>(data);
+                }
             }
-
-
         }
 
         public void Delete(T data)
@@ -57,71 +78,84 @@ namespace BinarySeachTrees
                 Delete(_root, data);
         }
 
-        private static Node<T> Delete(Node<T> node, T data)
+        private Node<T> Delete(Node<T> node, T data)
         {
             if (node == null) return null;
             if (node.CompareTo(data) < 0)
-            {
                 node.LeftNode = Delete(node.LeftNode, data);
-            }
             else if (node.CompareTo(data) > 0)
-            {
                 node.RightNode = Delete(node.RightNode, data);
-            }
             else
             {
-                //we found the node
                 if (node.LeftNode == null && node.RightNode == null)
                 {
-                    Console.WriteLine("Node with no leafs");
+                    Console.WriteLine("Landed on a node without leafs");
                     return null;
                 }
-
-                if (node.LeftNode == null)
+                else if (node.LeftNode == null)
                 {
-                    Console.WriteLine("Removing the right child");
-                    var tempNode = node.RightNode;
-                    return tempNode;
+                    Console.WriteLine("Node with a right leaf");
+                    node = null;
+                    return node.RightNode;
                 }
-                if (node.RightNode == null)
+                else if (node.RightNode == null)
                 {
-                    Console.WriteLine("Removing the left child");
-                    var tempNode = node.LeftNode;
-                    return tempNode;
+                    Console.WriteLine("Node with a left leaf");
+                    node = null;
+                    return node.LeftNode;
                 }
-
-                Console.WriteLine("Removing node with two children");
-                var temp = GetPredecessor(node.LeftNode);
-                node.Data = temp.Data;
-                node.LeftNode = Delete(node.LeftNode, temp.Data);
-
+                else
+                {
+                    Console.WriteLine("Landed on a node with two leafs");
+                    var temp = GetPredecessor(node.LeftNode);
+                    node.Data = temp.Data;
+                    node.LeftNode = Delete(node.LeftNode, temp.Data);
+                }
             }
             return node;
         }
 
-        private static Node<T> GetPredecessor(Node<T> nodeLeftNode)
+        private Node<T> GetPredecessor(Node<T> leftNode)
         {
-            return nodeLeftNode.RightNode != null ? GetPredecessor(nodeLeftNode.RightNode) : nodeLeftNode;
+            if (leftNode.RightNode != null)
+                return GetPredecessor(leftNode.RightNode);
+            Console.WriteLine($"Predecessor: {leftNode.Data}");
+            return leftNode;
         }
 
         public T GetMaxValue()
         {
-            return _root == null ? default(T) : GetMax(_root);
+            var data = default(T);
+            if (_root != null)
+                data = GetMax(_root);
+            return data;
         }
 
-        private static T GetMax(Node<T> node)
+        private T GetMax(Node<T> node)
         {
-            return node.RightNode != null ? GetMax(node.RightNode) : node.Data;
+            if (node.RightNode != null)
+                return GetMax(node.RightNode);
+            return node.Data;
         }
 
         public T GetMinValue()
         {
-            return _root == null ? default(T) : GetMinValue(_root);
+            var data = default(T);
+            if (_root != null)
+            {
+                data = GetMin(_root);
+            }
+            return data;
         }
 
-        private static T GetMinValue(Node<T> node)
+        private T GetMin(Node<T> node)
         {
-            return node.LeftNode != null ? GetMinValue(node.LeftNode) : node.Data;
+            if (node.LeftNode != null)
+            {
+                return GetMin(node.LeftNode);
+            }
+
+            return node.Data;
         }
     }
 }

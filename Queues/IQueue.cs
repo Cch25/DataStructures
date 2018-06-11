@@ -1,6 +1,6 @@
 ﻿namespace Queues
 {
-    public interface IQueueFake<T>
+    public interface IQueue<T>
     {
         void Enqueue(T data);
         T Dequeue();

@@ -5,10 +5,10 @@ D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\LinkedLists
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\LinkedLists\obj\Debug\LinkedLists.csproj.CoreCompileInputs.cache
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\LinkedLists\obj\Debug\LinkedLists.exe
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\LinkedLists\obj\Debug\LinkedLists.pdb
-D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\bin\Debug\LinkedLists.exe.config
-D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\bin\Debug\LinkedLists.exe
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\bin\Debug\LinkedLists.pdb
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\obj\Debug\LinkedLists.csprojResolveAssemblyReference.cache
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\obj\Debug\LinkedLists.csproj.CoreCompileInputs.cache
-D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\obj\Debug\LinkedLists.exe
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\obj\Debug\LinkedLists.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\bin\Debug\LinkedLists.dll.config
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\bin\Debug\LinkedLists.dll
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\LinkedLists\obj\Debug\LinkedLists.dll

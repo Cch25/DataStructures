@@ -2,7 +2,7 @@
 
 namespace LinkedLists
 {
-    public class LinkedFakeList<T> : IFakeList<T>
+    public class LinkedList<T> : ILinkedList<T>
     {
         private int _size;
         private Node<T> _rootNode;
