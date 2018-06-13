@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5893E734-E6FF-4F96-B8C7-95E2E0E8CE7B}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>T107.DataStructuresAndAlgorithms</RootNamespace>
-    <AssemblyName>T107.DataStructuresAndAlgorithms</AssemblyName>
+    <ProjectGuid>{03142291-75D9-4AB6-9465-E78EE76C915E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SortingAlgorithms</RootNamespace>
+    <AssemblyName>SortingAlgorithms</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,34 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HelperMethods.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="SortingAlgorithm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BinarySeachTrees\BinarySeachTrees.csproj">
-      <Project>{E62804BA-20B4-4566-B5A7-BD2A766186E8}</Project>
-      <Name>BinarySeachTrees</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LinkedLists\LinkedLists.csproj">
-      <Project>{809B7F79-0129-4F56-97CB-23F00EEB1130}</Project>
-      <Name>LinkedLists</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Queues\Queues.csproj">
-      <Project>{53562669-637A-4809-97C8-0040C4D1164E}</Project>
-      <Name>Queues</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SortingAlgorithms\SortingAlgorithms.csproj">
-      <Project>{03142291-75d9-4ab6-9465-e78ee76c915e}</Project>
-      <Name>SortingAlgorithms</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Stacks\Stacks.csproj">
-      <Project>{BF1082D1-DFC6-494F-9426-D20671788C04}</Project>
-      <Name>Stacks</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

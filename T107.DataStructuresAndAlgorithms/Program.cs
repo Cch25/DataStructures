@@ -3,7 +3,7 @@ using LinkedLists;
 using Queues;
 using Stacks;
 using System;
-
+using static T107.DataStructuresAndAlgorithms.HelperMethods;
 
 namespace T107.DataStructuresAndAlgorithms
 {
@@ -15,6 +15,8 @@ namespace T107.DataStructuresAndAlgorithms
             CheckStack();
             CheckQueue();
             CheckBinarySearchTree();
+            int[] array = { 5, 4, 3, 12, 15, 13, 20 };
+            array.Sort(SortAlgorithm.InsertionSort);
 
         }
 
@@ -41,25 +43,25 @@ namespace T107.DataStructuresAndAlgorithms
             stack.Push(25);
             stack.Push(35);
             Console.WriteLine("-------------");
-            Console.WriteLine("Items in our stack: "+stack.Size());
+            Console.WriteLine("Items in our stack: " + stack.Size());
             foreach (var s in stack)
             {
                 Console.WriteLine(s);
             }
 
             Console.WriteLine("-------------");
-            Console.WriteLine("Peek items to pop: "+stack.Peek() +" removing: "+ stack.Pop());
-            Console.WriteLine("Peek items to pop: "+stack.Peek() +" removing: "+ stack.Pop());
-            Console.WriteLine("Peek items to pop: "+stack.Peek() +" removing: "+ stack.Pop());
+            Console.WriteLine("Peek items to pop: " + stack.Peek() + " removing: " + stack.Pop());
+            Console.WriteLine("Peek items to pop: " + stack.Peek() + " removing: " + stack.Pop());
+            Console.WriteLine("Peek items to pop: " + stack.Peek() + " removing: " + stack.Pop());
 
             Console.WriteLine("-------------");
-            Console.WriteLine("Items left: "+stack.Size());
+            Console.WriteLine("Items left: " + stack.Size());
             foreach (var s in stack)
             {
                 Console.WriteLine(s);
             }
             Console.WriteLine("-------------");
-            Console.WriteLine("Is stack empty: "+stack.IsEmpty());
+            Console.WriteLine("Is stack empty: " + stack.IsEmpty());
 
 
         }
@@ -101,4 +103,5 @@ namespace T107.DataStructuresAndAlgorithms
             bst.Traversal(TraverseType.InOrder);
         }
     }
+
 }

@@ -95,14 +95,16 @@ namespace BinarySeachTrees
                 else if (node.LeftNode == null)
                 {
                     Console.WriteLine("Node with a right leaf");
+                    var temp = node.RightNode;
                     node = null;
-                    return node.RightNode;
+                    return temp;
                 }
                 else if (node.RightNode == null)
                 {
                     Console.WriteLine("Node with a left leaf");
+                    var temp = node.LeftNode;
                     node = null;
-                    return node.LeftNode;
+                    return temp;
                 }
                 else
                 {

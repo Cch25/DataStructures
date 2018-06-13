@@ -35,3 +35,5 @@ D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructu
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\LinkedLists.dll.config
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\Queues.dll.config
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\Stacks.dll.config
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\SortingAlgorithms.dll
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\SortingAlgorithms.pdb
