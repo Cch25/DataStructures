@@ -6,10 +6,11 @@ namespace T107.DataStructuresAndAlgorithms
     {
         public enum SortAlgorithm
         {
-            BubbleSort, BogoSort, SleepSort, SelectionSort, InsertionSort, ShellSort
+            BubbleSort, BogoSort, SleepSort, SelectionSort, InsertionSort, ShellSort,QuickSort
         }
         public static void Sort(this int[] myArray, SortAlgorithm sa)
         {
+            System.Console.WriteLine("\nSorting algoritm: ");
             var sortType = new SortingAlgorithm();
             switch (sa)
             {
@@ -31,6 +32,9 @@ namespace T107.DataStructuresAndAlgorithms
                     break;
                 case SortAlgorithm.ShellSort:
                     sortType.SelectionSort(myArray);
+                    break;
+                case SortAlgorithm.QuickSort:
+                    sortType.QuickSort(myArray);
                     break;
             }
         }

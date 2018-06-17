@@ -16,7 +16,7 @@ namespace T107.DataStructuresAndAlgorithms
             CheckQueue();
             CheckBinarySearchTree();
             int[] array = { 5, 4, 3, 12, 15, 13, 20 };
-            array.Sort(SortAlgorithm.InsertionSort);
+            array.Sort(SortAlgorithm.QuickSort);
 
         }
 

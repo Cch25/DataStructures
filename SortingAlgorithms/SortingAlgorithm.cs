@@ -125,7 +125,36 @@ namespace SortingAlgorithms
         #endregion
 
         #region Quick Sort
+        public void QuickSort(int[] myArray)
+        {
+            QuickSort(myArray, 0, myArray.Length - 1);
+            Traverse(myArray);
+        }
 
+        private void QuickSort(int[] myArray, int low, int high)
+        {
+            if (low > high) return;
+            int pivot = Partition(myArray, low, high);
+            QuickSort(myArray, low, pivot - 1);
+            QuickSort(myArray, pivot + 1, high);
+        }
+
+        private int Partition(int[] myArray, int low, int high)
+        {
+            int pivotIndex = (low + high) / 2;
+            Swap(myArray, pivotIndex, high);
+            int i = low;
+            for (int j = low; j < high; j++)
+            {
+                if (myArray[j] <= myArray[high])
+                {
+                    Swap(myArray, i, j);
+                    i++;
+                }
+            }
+            Swap(myArray, i, high);
+            return i;
+        }
         #endregion
 
         #region Merge Sort
