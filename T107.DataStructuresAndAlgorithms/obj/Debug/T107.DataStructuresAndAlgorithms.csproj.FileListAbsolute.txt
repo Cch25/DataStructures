@@ -39,3 +39,5 @@ D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructu
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\SortingAlgorithms.pdb
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\BFS-BreadthFirstSearch.dll
 D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\BFS-BreadthFirstSearch.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\SearchingAlgorithms.dll
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\T107.DataStructuresAndAlgorithms\bin\Debug\SearchingAlgorithms.pdb

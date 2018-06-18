@@ -1,4 +1,5 @@
-﻿using SortingAlgorithms;
+﻿using SearchingAlgorithms;
+using SortingAlgorithms;
 
 namespace T107.DataStructuresAndAlgorithms
 {
@@ -37,6 +38,10 @@ namespace T107.DataStructuresAndAlgorithms
                     sortType.QuickSort(myArray);
                     break;
             }
+        }
+        public static int Search(this int[] array, IAlgorithm algorithm, int search)
+        {
+            return algorithm.Search(array, search);
         }
     }
 

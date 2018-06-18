@@ -1,0 +1,6 @@
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\SearchingAlgorithms\bin\Debug\SearchingAlgorithms.dll
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\SearchingAlgorithms\bin\Debug\SearchingAlgorithms.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\SearchingAlgorithms\obj\Debug\SearchingAlgorithms.csprojResolveAssemblyReference.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\SearchingAlgorithms\obj\Debug\SearchingAlgorithms.csproj.CoreCompileInputs.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\SearchingAlgorithms\obj\Debug\SearchingAlgorithms.dll
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\SearchingAlgorithms\obj\Debug\SearchingAlgorithms.pdb

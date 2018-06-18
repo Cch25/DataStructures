@@ -66,6 +66,10 @@
       <Project>{53562669-637A-4809-97C8-0040C4D1164E}</Project>
       <Name>Queues</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SearchingAlgorithms\SearchingAlgorithms.csproj">
+      <Project>{a218ef23-9bc4-4707-9f98-603a71d26b30}</Project>
+      <Name>SearchingAlgorithms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SortingAlgorithms\SortingAlgorithms.csproj">
       <Project>{03142291-75d9-4ab6-9465-e78ee76c915e}</Project>
       <Name>SortingAlgorithms</Name>

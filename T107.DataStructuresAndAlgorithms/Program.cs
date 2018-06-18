@@ -2,6 +2,7 @@
 using BinarySeachTrees;
 using LinkedLists;
 using Queues;
+using SearchingAlgorithms;
 using Stacks;
 using System;
 using static T107.DataStructuresAndAlgorithms.HelperMethods;
@@ -15,11 +16,16 @@ namespace T107.DataStructuresAndAlgorithms
             //CheckLinkedLists();
             //CheckStack();
             //CheckQueue();
+
             //CheckBinarySearchTree();
+            
             //int[] array = { 5, 4, 3, 12, 15, 13, 20 };
             //array.Sort(SortAlgorithm.QuickSort);
+
             //BreadthFirstSearch();
 
+            //int[] sortedArray = new[] { 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 };
+            //SearchAlgorithms(sortedArray, 5, SearchAlgoritms.BinarySearch);
         }
 
         private static void CheckLinkedLists()
@@ -125,6 +131,22 @@ namespace T107.DataStructuresAndAlgorithms
             //bfs.Traverse(v1);
             bfs.Search(vertex1, "Karen");
         }
+        private static void SearchAlgorithms(int[] sortedArray, int search, SearchAlgoritms searchType)
+        {
+            switch (searchType)
+            {
+                case SearchAlgoritms.BinarySearch:
+                    Console.WriteLine($"Found at position: {sortedArray.Search(new BinarySearchAlgorithm(), search)}");
+                    break;
+                case SearchAlgoritms.LinearSearch:
+                    Console.WriteLine($"Found at position: {sortedArray.Search(new LinearSearch(), search)}");
+                    break;
+                case SearchAlgoritms.JumpSearch:
+                    Console.WriteLine($"Found at position: {sortedArray.Search(new JumpSearch(), search)}");
+                    break;
+            }
+        }
+        enum SearchAlgoritms { BinarySearch, LinearSearch, JumpSearch };
     }
 
 }
