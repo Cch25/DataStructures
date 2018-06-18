@@ -1,4 +1,5 @@
-﻿using BinarySeachTrees;
+﻿using BFS_BreadthFirstSearch;
+using BinarySeachTrees;
 using LinkedLists;
 using Queues;
 using Stacks;
@@ -11,12 +12,13 @@ namespace T107.DataStructuresAndAlgorithms
     {
         static void Main()
         {
-            CheckLinkedLists();
-            CheckStack();
-            CheckQueue();
-            CheckBinarySearchTree();
-            int[] array = { 5, 4, 3, 12, 15, 13, 20 };
-            array.Sort(SortAlgorithm.QuickSort);
+            //CheckLinkedLists();
+            //CheckStack();
+            //CheckQueue();
+            //CheckBinarySearchTree();
+            //int[] array = { 5, 4, 3, 12, 15, 13, 20 };
+            //array.Sort(SortAlgorithm.QuickSort);
+            //BreadthFirstSearch();
 
         }
 
@@ -101,6 +103,27 @@ namespace T107.DataStructuresAndAlgorithms
             bst.Delete(8);
 
             bst.Traversal(TraverseType.InOrder);
+        }
+        private static void BreadthFirstSearch()
+        {
+            var bfs = new BreadthFirstSearch<string>();
+            Vertex<string> CreateFriendList()
+            {
+                var v1 = new Vertex<string>("Emma");
+                var v2 = new Vertex<string>("Elsa");
+                var v3 = new Vertex<string>("Anna");
+                var v4 = new Vertex<string>("Karen");
+                var v5 = new Vertex<string>("Ella");
+                v1.AddNeighbours(v2);
+                v1.AddNeighbours(v3);
+                v2.AddNeighbours(v1);
+                v3.AddNeighbours(v4);
+                v4.AddNeighbours(v5);
+                return v1;
+            }
+            var vertex1 = CreateFriendList();
+            //bfs.Traverse(v1);
+            bfs.Search(vertex1, "Karen");
         }
     }
 

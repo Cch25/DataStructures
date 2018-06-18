@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySeachTrees", "BinaryS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{03142291-75D9-4AB6-9465-E78EE76C915E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFS-BreadthFirstSearch", "BFS-BreadthFirstSearch\BFS-BreadthFirstSearch.csproj", "{17501869-53F3-47E1-A8A6-AD75305B31CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{03142291-75D9-4AB6-9465-E78EE76C915E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03142291-75D9-4AB6-9465-E78EE76C915E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03142291-75D9-4AB6-9465-E78EE76C915E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17501869-53F3-47E1-A8A6-AD75305B31CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17501869-53F3-47E1-A8A6-AD75305B31CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17501869-53F3-47E1-A8A6-AD75305B31CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17501869-53F3-47E1-A8A6-AD75305B31CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

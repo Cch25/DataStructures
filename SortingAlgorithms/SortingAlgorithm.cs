@@ -157,18 +157,6 @@ namespace SortingAlgorithms
         }
         #endregion
 
-        #region Merge Sort
-
-        #endregion
-
-        #region Counting Sort
-
-        #endregion
-
-        #region Radix Sort
-
-        #endregion
-
         #region Helper methods
         private void Swap(ref int x, ref int y)
         {
