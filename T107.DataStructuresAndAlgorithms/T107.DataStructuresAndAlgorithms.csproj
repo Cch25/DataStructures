@@ -58,6 +58,10 @@
       <Project>{E62804BA-20B4-4566-B5A7-BD2A766186E8}</Project>
       <Name>BinarySeachTrees</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DFS-DepthFirstSearch\DFS-DepthFirstSearch.csproj">
+      <Project>{bb33839b-778f-4b39-be4d-740815b453bb}</Project>
+      <Name>DFS-DepthFirstSearch</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LinkedLists\LinkedLists.csproj">
       <Project>{809B7F79-0129-4F56-97CB-23F00EEB1130}</Project>
       <Name>LinkedLists</Name>

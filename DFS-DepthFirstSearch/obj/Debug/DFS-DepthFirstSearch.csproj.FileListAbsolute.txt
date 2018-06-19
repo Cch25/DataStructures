@@ -1,0 +1,6 @@
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\DFS-DepthFirstSearch\bin\Debug\DFS-DepthFirstSearch.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\DFS-DepthFirstSearch\obj\Debug\DFS-DepthFirstSearch.csprojResolveAssemblyReference.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\DFS-DepthFirstSearch\obj\Debug\DFS-DepthFirstSearch.csproj.CoreCompileInputs.cache
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\DFS-DepthFirstSearch\obj\Debug\DFS-DepthFirstSearch.pdb
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\DFS-DepthFirstSearch\bin\Debug\DFS-DepthFirstSearch.exe
+D:\Programare\ProgramareC#\Projects\T107.DataStructuresAndAlgorithms\DataStructures\DFS-DepthFirstSearch\obj\Debug\DFS-DepthFirstSearch.exe

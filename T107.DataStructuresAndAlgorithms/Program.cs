@@ -1,5 +1,6 @@
 ﻿using BFS_BreadthFirstSearch;
 using BinarySeachTrees;
+using DFS_DepthFirstSearch;
 using LinkedLists;
 using Queues;
 using SearchingAlgorithms;
@@ -13,19 +14,21 @@ namespace T107.DataStructuresAndAlgorithms
     {
         static void Main()
         {
-            //CheckLinkedLists();
-            //CheckStack();
-            //CheckQueue();
+            CheckLinkedLists();
+            CheckStack();
+            CheckQueue();
 
-            //CheckBinarySearchTree();
-            
-            //int[] array = { 5, 4, 3, 12, 15, 13, 20 };
-            //array.Sort(SortAlgorithm.QuickSort);
+            CheckBinarySearchTree();
 
-            //BreadthFirstSearch();
+            int[] array = { 5, 4, 3, 12, 15, 13, 20 };
+            array.Sort(SortAlgorithm.QuickSort);
 
-            //int[] sortedArray = new[] { 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 };
-            //SearchAlgorithms(sortedArray, 5, SearchAlgoritms.BinarySearch);
+            BreadthFirstSearch();
+            //DFS has its own project
+
+            int[] sortedArray = new[] { 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 };
+            SearchAlgorithms(sortedArray, 5, SearchAlgoritms.BinarySearch);
+
         }
 
         private static void CheckLinkedLists()
@@ -113,13 +116,13 @@ namespace T107.DataStructuresAndAlgorithms
         private static void BreadthFirstSearch()
         {
             var bfs = new BreadthFirstSearch<string>();
-            Vertex<string> CreateFriendList()
+            BFS_BreadthFirstSearch.Vertex<string> CreateFriendList()
             {
-                var v1 = new Vertex<string>("Emma");
-                var v2 = new Vertex<string>("Elsa");
-                var v3 = new Vertex<string>("Anna");
-                var v4 = new Vertex<string>("Karen");
-                var v5 = new Vertex<string>("Ella");
+                var v1 = new BFS_BreadthFirstSearch.Vertex<string>("Emma");
+                var v2 = new BFS_BreadthFirstSearch.Vertex<string>("Elsa");
+                var v3 = new BFS_BreadthFirstSearch.Vertex<string>("Anna");
+                var v4 = new BFS_BreadthFirstSearch.Vertex<string>("Karen");
+                var v5 = new BFS_BreadthFirstSearch.Vertex<string>("Ella");
                 v1.AddNeighbours(v2);
                 v1.AddNeighbours(v3);
                 v2.AddNeighbours(v1);
